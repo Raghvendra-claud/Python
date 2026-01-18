@@ -1,15 +1,20 @@
-class person:
-    def __init__(self,n,o):
-        print("Hey I am a person.")
-        self.name = n 
-        self.occ = o
+class Person:
+    def __init__(self,name,occ):   #done done method
+        print("Hey! I am a person")
+        self.name = name
+        self.occ = occ
+
+    name = "harry"
+    occ = "Software Developer"
 
     def info(self):
-        print(f"{self.name} is a {self.occ}")
+        print(f"{self.name} is a/an {self.occ}")
 
-a = person("Harry","Developer")
-b = person("Divya","HR")
-c = person(1,2)
+a = Person("harry","Developer")
+b = Person("Divya","HR")
 a.info()
 b.info()
-print(a.name)
+
+# a.name = "Divya"
+# a.occupation = "HR"
+# a.info()

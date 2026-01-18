@@ -1,5 +1,4 @@
-s1 = {1, 2, 5, 6}
-s2 = {3, 6, 7}
-
-print(s1.union(s2))
-print()
+cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities2 = {"Tokyo", "Seoul", "Kabul", "Madrid"}
+cities3 = cities.union(cities2)
+print(cities3)

@@ -1,19 +1,29 @@
-def greet(fx):
-  def mfx(*args, **kwargs):
-    print("Good Morning")
-    fx(*args, **kwargs)
-    print("Thanks for using this function")
-  return mfx
+import logging
 
-@greet
-def hello():
-  print("Hello world")
+logging.basicConfig(level=logging.INFO)
 
-@greet
-def add(a, b):
-  print(a+b)
-  
-# greet(hello)()
-hello()
-# greet(add)(1, 2)
-add(1, 2)
+# logging.info("This is my first log message")
+# print("Program finished")
+
+logging.debug("Debug message")
+logging.info("Information message")
+logging.warning("Warning message")
+logging.error("Error message")
+logging.critical("Critical message")
+
+
+
+# def greet(fx):
+#     def mfx():
+#         print("Good Morning")
+#         fx()
+#         print("Thanks for using this function")
+#     return mfx
+
+# @greet
+# def hello():
+#     print("Hello world!")
+
+# hello()
+
+# https://chatgpt.com/share/696bcbd7-0e1c-8003-a175-04bf9cd6a510   (important)
