@@ -1,12 +1,20 @@
-try:
-    a = int(input("enter the number: "))
-    print(f"print multiplication table of {a} is: ")
-    i = 0
-    while( i < 10 ):
-        print(f"{a} X {i+1} = {a*(i+1)}")
-        i += 1
-except Exception as e:
-    print("Inavlid input!", e)
+# a = input("Enter the number: ")
+# print(f"Multiplication table of {a} is: ")
+# try:
+#   for i in range(1, 11):
+#     print(f"{int(a)} X {i} = {int(a)*i}")
+# except:
+#   print("Invalid  Input!")
 
-print("some important lines of code!")
-print("end of program.")
+# print("Some imp lines of code")
+# print("End of program")
+
+try:
+    num = int(input("Enter an integer: "))
+    a = [6, 3]
+    print(a[num])
+except ValueError:
+    print("Number entered is not an integer.")
+    
+except IndexError:
+  print("Index Error")

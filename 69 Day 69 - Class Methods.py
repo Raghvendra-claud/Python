@@ -1,7 +1,15 @@
-class empolyee:
+class Empolyee:
     company = "Apple"
-    def __init__(self,name):
-        self.name = name
-        print(f"the name is {self.name} and comapany is {self.company}")
+    def show(self):
+        print(f"The name is {self.name} and company is {self.company}")
 
-a = empolyee("Abhay")
+    @classmethod
+    def changecompny(self,newCompany):
+        self.company = newCompany
+
+e1 = Empolyee()
+e1.name = "harry"
+e1.show()
+e1.changecompny("tesla")
+e1.show()
+print(Empolyee.company) 
